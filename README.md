@@ -1,5 +1,8 @@
 # DeepSeek Harness Mastery & Autonomous ML AutoResearch Suite
 
+- Name: Kalhar Mayurbhai Patel
+- SJSU ID: 019140511
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Node: v20+](https://img.shields.io/badge/Node-v20%2B-green.svg)](https://nodejs.org/)
