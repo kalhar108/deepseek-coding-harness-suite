@@ -16,9 +16,9 @@ A comprehensive, production-ready coding harness suite featuring a progressive C
 
 | Part | Title & Deliverable | YouTube Video Link | Key Walkthrough Highlights |
 |------|---------------------|--------------------|----------------------------|
-| **Part A** | Progressive Coding Harness from Scratch | [📺 Watch Part A Full Walkthrough Video](https://www.youtube.com/watch?v=Lu1UWqWTbQg) | Code walkthrough of minimal LLM loop, diff patcher, AST parser, and SWE-bench pass@1 evaluator. |
-| **Part B** | DeepSeek Harness & 7 Creator Mode Plugins | [📺 Watch Part B Creator Mode & Plugin Demo](https://www.youtube.com/watch?v=Lu1UWqWTbQg) | Creator Mode single-prompt hot-loader, trajectory event streaming, and execution of 7 custom plugins. |
-| **Part C** | Custom ML AutoResearch End-to-End Harness | [📺 Watch Part C AutoResearch Demo Video](https://www.youtube.com/watch?v=Lu1UWqWTbQg) | Automated hypothesis generation, PyTorch training loop, metric logger, and paper synthesis. |
+| **Part A** | Progressive Coding Harness from Scratch | [📺 Watch Part A Full Walkthrough Video](https://youtu.be/MO7FbuIxTeU) | Code walkthrough of minimal LLM loop, diff patcher, AST parser, and SWE-bench pass@1 evaluator. |
+| **Part B** | DeepSeek Harness & 7 Creator Mode Plugins | [📺 Watch Part B Creator Mode & Plugin Demo](https://youtu.be/NX8qupCCV_U) | Creator Mode single-prompt hot-loader, trajectory event streaming, and execution of 7 custom plugins. |
+| **Part C** | Custom ML AutoResearch End-to-End Harness | [📺 Watch Part C AutoResearch Demo Video](https://youtu.be/z1nwtR0obaE) | Automated hypothesis generation, PyTorch training loop, metric logger, and paper synthesis. |
 
 > 💡 **Interactive Local Presentation Players**: Run `python3 scripts/generate_video_demos.py` to launch full-length recorded walkthrough video presentations directly in your browser (`videos/part_a_walkthrough.html`, `videos/part_b_walkthrough.html`, `videos/part_c_walkthrough.html`).
 
