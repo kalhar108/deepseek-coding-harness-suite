@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek Harness Mastery & AutoResearch Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo">⚡</div>
+                <div>
+                    <h2>DeepSeek Harness</h2>
+                    <span class="badge">Mastery Studio v2.5</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="nav-item active" onclick="switchTab('part-a')">
+                    <span class="icon">🛠️</span> Part A: Coding Harness
+                </button>
+                <button class="nav-item" onclick="switchTab('part-b')">
+                    <span class="icon">🧩</span> Part B: DSH Plugins (7)
+                </button>
+                <button class="nav-item" onclick="switchTab('part-c')">
+                    <span class="icon">🔬</span> Part C: AutoResearch ML
+                </button>
+                <button class="nav-item" onclick="switchTab('videos')">
+                    <span class="icon">🎬</span> Video Walkthroughs
+                </button>
+            </nav>
+
+            <div class="preset-selector">
+                <label>Active DSH Preset:</label>
+                <select id="preset-dropdown" onchange="changePreset()">
+                    <option value="default">Standard Coding Preset</option>
+                    <option value="debug">Cursor Debug Mode Preset</option>
+                    <option value="seo_workbench">SEO Workbench</option>
+                    <option value="autoresearch">Autonomous ML Researcher</option>
+                </select>
+            </div>
+        </aside>
+
+        <!-- Main Content Viewport -->
+        <main class="main-viewport">
+            <!-- PART A VIEW -->
+            <section id="part-a" class="tab-content active">
+                <header class="section-header">
+                    <h1>Part A: Progressive Coding Harness from Scratch</h1>
+                    <p>OpenRouter API / Gemini Pro agent loop with diff patching, AST inspection & benchmark evaluator.</p>
+                </header>
+
+                <div class="grid-2col">
+                    <div class="card glass">
+                        <h3>Agent Interactive Console</h3>
+                        <div class="prompt-box">
+                            <input type="text" id="agent-prompt-input" value="Audit current workspace files and run pytest evaluation suite." placeholder="Enter instruction...">
+                            <button onclick="runAgentTask()" class="btn btn-primary">Run Harness Turn</button>
+                        </div>
+                        <div class="terminal-output" id="part-a-terminal">
+                            <div class="log-line system">[System]: FullCodingHarness initialized with OpenRouter / Gemini LLM Engine.</div>
+                            <div class="log-line info">[Info]: 4 Progressive Steps ready (Minimal Loop -> Tool Harness -> Eval Runner -> Full CLI).</div>
+                        </div>
+                    </div>
+
+                    <div class="card glass">
+                        <h3>Progressive Harness Architecture</h3>
+                        <div class="step-card">
+                            <span class="step-num">Step 1</span>
+                            <div>
+                                <h4>~20-Line Minimal Agent Loop</h4>
+                                <p>Core Pydantic-AI style LLM call & tool parsing REPL loop.</p>
+                            </div>
+                        </div>
+                        <div class="step-card">
+                            <span class="step-num">Step 2</span>
+                            <div>
+                                <h4>Tool Harness & Context Window</h4>
+                                <p>Unified diff patching, AST summaries, and token budget pruning.</p>
+                            </div>
+                        </div>
+                        <div class="step-card">
+                            <span class="step-num">Step 3</span>
+                            <div>
+                                <h4>SWE-bench Benchmark Evaluator</h4>
+                                <p>Automated test execution, patch validation, Pass@1 metrics.</p>
+                            </div>
+                        </div>
+                        <div class="step-card">
+                            <span class="step-num">Step 4</span>
+                            <div>
+                                <h4>Production CLI & Telemetry Harness</h4>
+                                <p>Colorized streaming output, event stream snapshots, multi-model routing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PART B VIEW -->
+            <section id="part-b" class="tab-content">
+                <header class="section-header">
+                    <h1>Part B: DeepSeek Harness & Creator Mode Plugins</h1>
+                    <p>Customized with 7 active plugins (2 built from scratch) & Creator Mode single-sentence generator.</p>
+                </header>
+
+                <div class="creator-box glass">
+                    <h3>🪄 Creator Mode: Synthesize Plugin from Prompt</h3>
+                    <div class="prompt-box">
+                        <input type="text" id="creator-prompt-input" value="Add a dinosaur jumping game floating in the bottom right" placeholder="Describe a plugin in one sentence...">
+                        <button onclick="generatePlugin()" class="btn btn-accent">Generate & Hot-Load Plugin</button>
+                    </div>
+                </div>
+
+                <div class="plugin-grid" id="plugin-container">
+                    <!-- Dynamic Plugin Cards inserted by app.js -->
+                </div>
+            </section>
+
+            <!-- PART C VIEW -->
+            <section id="part-c" class="tab-content">
+                <header class="section-header">
+                    <h1>Part C: Autonomous ML AutoResearch Harness</h1>
+                    <p>End-to-end ML hypothesis generation, PyTorch training sandbox, metrics logger, and academic report generator.</p>
+                </header>
+
+                <div class="grid-2col">
+                    <div class="card glass">
+                        <div class="flex-between">
+                            <h3>AutoResearch Control Center</h3>
+                            <button onclick="runAutoResearch()" class="btn btn-success">Launch 3-Experiment Loop</button>
+                        </div>
+                        <div class="research-status" id="research-status-box">
+                            <p><strong>Hypothesis:</strong> "Adding residual skip connections and expanding hidden dimensions (d=128) boosts classification accuracy."</p>
+                        </div>
+                        <div class="terminal-output" id="part-c-terminal">
+                            <div class="log-line system">[AutoResearch]: Harness Ready. Target Dataset: Synthetic Tabular Classification.</div>
+                        </div>
+                    </div>
+
+                    <div class="card glass">
+                        <h3>Experiment Validation & Report Preview</h3>
+                        <div class="report-preview" id="paper-preview-box">
+                            <h4>📄 paper_draft.md (Excerpt)</h4>
+                            <pre id="paper-text">Click 'Launch 3-Experiment Loop' to run autonomous ML research and generate paper_draft.md!</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIDEOS VIEW -->
+            <section id="videos" class="tab-content">
+                <header class="section-header">
+                    <h1>Video Walkthroughs & YouTube Deliverables</h1>
+                    <p>Recorded full-length code walkthroughs and interactive execution video presentations for all parts.</p>
+                </header>
+
+                <div class="grid-3col">
+                    <div class="card glass video-card">
+                        <div class="video-thumb">🎥 PART A DEMO</div>
+                        <h4>Part A: Progressive Harness Walkthrough</h4>
+                        <p>Detailed code walkthrough of minimal agent loop, tool harness, diff patcher, and SWE evaluator.</p>
+                        <button onclick="playVideo('part_a')" class="btn btn-outline">Watch Full Video Demo</button>
+                    </div>
+                    <div class="card glass video-card">
+                        <div class="video-thumb">🎥 PART B DEMO</div>
+                        <h4>Part B: DeepSeek Harness & 7 Plugins</h4>
+                        <p>Creator Mode prompt-to-plugin generator and live execution of all 7 custom plugins.</p>
+                        <button onclick="playVideo('part_b')" class="btn btn-outline">Watch Full Video Demo</button>
+                    </div>
+                    <div class="card glass video-card">
+                        <div class="video-thumb">🎥 PART C DEMO</div>
+                        <h4>Part C: Custom ML AutoResearch Harness</h4>
+                        <p>Autonomous hypothesis formulation, PyTorch model training, metric logging, and paper paper_draft.md.</p>
+                        <button onclick="playVideo('part_c')" class="btn btn-outline">Watch Full Video Demo</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Floating UI Slot Widget Container (Part B Creator Mode Slot: shell.overlay) -->
+    <div id="shell-overlay-slot"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "deepseek-coding-harness-suite",
+  "version": "1.0.0",
+  "description": "Comprehensive DeepSeek Harness & AutoResearch Suite with Progressive Coding Harness, Creator Mode Plugins, and ML AutoResearch Engine",
+  "main": "web_dashboard/app.js",
+  "scripts": {
+    "start": "python3 -m http.server 8080 --directory web_dashboard",
+    "test": "python3 scripts/run_all_tests.py",
+    "demo:part_a": "python3 part_a_harness/step4_full_harness.py",
+    "demo:part_b": "python3 part_b_deepseek_plugins/run_dsh_demo.py",
+    "demo:part_c": "python3 part_c_autoresearch/run_autoresearch_demo.py",
+    "video:generate": "python3 scripts/generate_video_demos.py"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "coding-agent",
+    "pydantic-ai",
+    "autoresearch",
+    "openrouter-api",
+    "creator-mode",
+    "dsh-plugins"
+  ],
+  "author": "DeepSeek Harness Mastery",
+  "license": "MIT"
+}

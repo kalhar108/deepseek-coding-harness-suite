@@ -1,0 +1,43 @@
+name: DeepSeek Harness Master Engine
+version: 2.5.0
+spec_version: cordis/v1
+description: DeepSeek Harness with Creator Mode, Plugin Hot-loader, and Modular Agent Presets.
+
+presets:
+  default:
+    name: Standard Coding Preset
+    persona: "Autonomous DeepSeek Developer"
+    tools: [read_file, write_file, apply_patch, parse_ast, exec_sandbox]
+  debug:
+    name: Cursor Debug Mode Preset
+    persona: "Reproduce -> Inject Logs -> Root Cause -> Verify Fix"
+    tools: [test_runner, log_injector, root_cause_analyzer, patch_applier]
+  seo_workbench:
+    name: SEO & Content Auditor
+    persona: "Search Engine Optimization Analyst"
+    tools: [web_auditor, index_status_checker, keyword_parser]
+  autoresearch:
+    name: Autonomous ML Researcher
+    persona: "Hypothesis Generation -> Model Training -> Metrics Extraction -> Paper Report"
+    tools: [dataset_analyzer, PyTorch_trainer, metrics_logger, report_builder]
+
+slots:
+  shell.overlay: []
+  sidebar.children: []
+  settings.cards: []
+
+plugins:
+  - id: dsh-second-brain
+    enabled: true
+  - id: dsh-dino-game
+    enabled: true
+  - id: dsh-cursor-debug
+    enabled: true
+  - id: dsh-seo-workbench
+    enabled: true
+  - id: dsh-mirage-vfs
+    enabled: true
+  - id: dsh-autopilot
+    enabled: true
+  - id: dsh-team-canvas
+    enabled: true
